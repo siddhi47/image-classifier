@@ -1,0 +1,27 @@
+{
+    "save_dir":"",
+    "train":{
+        "epochs":10,
+        "batch_size":4,
+        "lr":0.001,
+        "image_dir":"/mnt/d/images/",
+        "reference_file":"/mnt/d/train.csv",
+        "model":"vit",
+        "image_size":384,
+        "train_val_split":0.2,
+        "shuffle":true,
+        "num_classes":2,
+        "save_dir":"models",
+        "validation":false
+    },
+    "test":{
+        "reference_file":"/mnt/d/test.csv",
+        "batch_size":64,
+        "image_dir":"/mnt/test_images/",
+        "model":"vgg",
+        "image_size":300,
+        "num_classes":2,
+        "save_dir":"models"
+    }
+}
+
